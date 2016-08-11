@@ -1,0 +1,2 @@
+select * from (select city,LENGTH(city) as leng from station group by city order by leng desc,city ) where ROWNUM <=1;
+select * from (select city,LENGTH(city) as leng from station group by city order by leng,city) where ROWNUM <=1;
